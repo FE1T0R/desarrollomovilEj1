@@ -11,7 +11,7 @@ function getCharacters() {
 
         success: function (data) {
             $("#mycounter").attr("style","color: blue");
-            $("#mycounter").attr("data-purecounter-end",data.info.count);
+            $("#mycounter").attr("data-purecounter-end",data.info.pages);
             var characters = data;
             $.each(characters.results, function (index, character) {
                 $("#divAllChar").append(uniqueCharacter(character));
